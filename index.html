@@ -3,70 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovación con Inteligencia Artificial</title>
+    <title>Mis Proyectos de IA</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero .btn {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .proyectos, .contacto {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .proyectos-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .proyecto {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contacto form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contacto form input, .contacto form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contacto form button {
+            background: #ff9800;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Hero Section -->
+    <!-- Sección Hero -->
     <header class="hero">
         <div class="hero-content">
-            <h1>Transformamos Empresas con Inteligencia Artificial</h1>
-            <p>Soluciones avanzadas que optimizan procesos y potencian el crecimiento empresarial.</p>
-            <a href="#contacto" class="cta-button">Descubre Más</a>
+            <h1>Explora mis Modelos de Inteligencia Artificial</h1>
+            <p>Innovación y tecnología al servicio del futuro.</p>
+            <a href="#proyectos" class="btn">Ver Proyectos</a>
         </div>
     </header>
 
-    <!-- Sobre Mí -->
-    <section id="sobre-mi" class="about">
-        <div class="content">
-            <h2>Sobre Mí</h2>
-            <p>Desarrollo inteligencia artificial para mejorar la toma de decisiones en empresas. 
-               Mi enfoque es crear soluciones tecnológicas eficientes, escalables y alineadas con la innovación.</p>
-        </div>
-    </section>
-
-    <!-- Modelos de IA -->
-    <section id="modelos" class="models">
-        <div class="content">
-            <h2>Modelos de Inteligencia Artificial</h2>
-            <div class="model-grid">
-                <div class="model-card">
-                    <h3>Análisis Predictivo</h3>
-                    <p>Predice tendencias y patrones con algoritmos avanzados de machine learning.</p>
-                </div>
-                <div class="model-card">
-                    <h3>Optimización Empresarial</h3>
-                    <p>Automatiza procesos y maximiza la eficiencia operativa con IA.</p>
-                </div>
-                <div class="model-card">
-                    <h3>Comportamiento del Consumidor</h3>
-                    <p>Analiza datos en tiempo real para mejorar la experiencia del usuario.</p>
-                </div>
+    <!-- Galería de Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-container">
+            <!-- Tarjetas de proyectos -->
+            <div class="proyecto">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto IA 1</h3>
+                <p>Descripción breve del modelo de IA.</p>
+            </div>
+            <div class="proyecto">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto IA 2</h3>
+                <p>Descripción breve del modelo de IA.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact">
-        <div class="content">
-            <h2>Contacto</h2>
-            <p>Si deseas más información o colaborar en un proyecto, envíame un mensaje.</p>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Nombre" required>
-                <input type="email" id="email" name="email" placeholder="Correo" required>
-                <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="success-message" style="display: none;">Gracias por tu mensaje. Te responderé pronto.</p>
-        </div>
+    <!-- Formulario de Contacto -->
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Correo" required>
+            <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="responseMessage"></p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 IA para Empresas | Creado por [Tu Nombre]</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const response = await fetch('https://tu-endpoint.com/contact', {
+                method: 'POST',
+                body: formData
+            });
+            const result = await response.json();
+            document.getElementById('responseMessage').innerText = result.message;
+        });
+    </script>
 </body>
 </html>
