@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset y configuración global */
 * {
     margin: 0;
     padding: 0;
@@ -6,17 +6,22 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Hero espectacular */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
 .hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #000428, #004e92);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    position: relative;
 }
 
 .hero-content {
@@ -62,20 +67,11 @@ section {
     padding: 50px;
 }
 
-.about, .models, .contact {
-    background: white;
-}
-
+/* Modelos de IA */
 .models {
     background: #f4f4f4;
 }
 
-.contact {
-    background: #222;
-    color: white;
-}
-
-/* Tarjetas de modelos de IA */
 .model-grid {
     display: flex;
     justify-content: center;
@@ -96,7 +92,12 @@ section {
     transform: translateY(-5px);
 }
 
-/* Formulario de Contacto */
+/* Contacto */
+.contact {
+    background: #222;
+    color: white;
+}
+
 .contact form {
     display: flex;
     flex-direction: column;
@@ -125,7 +126,7 @@ button:hover {
     background: #ff5722;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
     background: #111;
     color: white;
