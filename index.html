@@ -3,35 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page IA</title>
+    <title>Inteligencia Artificial para Empresas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Bienvenido a Nuestra IA</h1>
-        <p>Descubre cómo nuestra IA puede ayudar a tu empresa.</p>
+    <!-- Sección Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Transforma tu Negocio con Inteligencia Artificial</h1>
+            <p>Soluciones avanzadas para optimizar procesos, mejorar decisiones y potenciar el crecimiento.</p>
+            <a href="#contacto" class="cta-button">Contáctame</a>
+        </div>
     </header>
 
-    <section class="models">
-        <h2>Modelos de IA</h2>
-        <ul>
-            <li>✅ IA de Análisis Predictivo</li>
-            <li>✅ IA de Optimización Empresarial</li>
-            <li>✅ IA de Comportamiento del Consumidor</li>
-        </ul>
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <h2>Sobre Mí</h2>
+        <p>Soy un apasionado del análisis de datos y la inteligencia artificial. Mi misión es desarrollar herramientas avanzadas que ayuden a las empresas a mejorar su eficiencia y tomar mejores decisiones.</p>
     </section>
 
-    <section class="contact">
+    <!-- Sección Modelos de IA -->
+    <section id="modelos" class="models">
+        <h2>Modelos de Inteligencia Artificial</h2>
+        <div class="model-card">
+            <h3>📊 IA de Análisis Predictivo</h3>
+            <p>Analiza datos históricos para predecir tendencias futuras y tomar decisiones basadas en datos.</p>
+        </div>
+        <div class="model-card">
+            <h3>⚙️ IA de Optimización Empresarial</h3>
+            <p>Automatiza procesos internos, mejora la eficiencia y reduce costos operativos.</p>
+        </div>
+        <div class="model-card">
+            <h3>🛍️ IA de Comportamiento del Consumidor</h3>
+            <p>Analiza patrones de compra y comportamiento de clientes para mejorar la experiencia de usuario.</p>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
         <h2>Contacto</h2>
+        <p>Si quieres saber más o colaborar en un proyecto, envíame un mensaje.</p>
         <form id="contact-form">
             <input type="text" id="name" name="name" placeholder="Nombre" required>
             <input type="email" id="email" name="email" placeholder="Correo" required>
             <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
             <button type="submit">Enviar</button>
         </form>
-        <p id="success-message" style="display: none;">✅ Gracias por contactarnos. Te responderemos pronto.</p>
+        <p id="success-message" style="display: none;">✅ Gracias por contactarme. Te responderé pronto.</p>
     </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 IA para Empresas | Creado por [Tu Nombre]</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
