@@ -67,3 +67,23 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+.more-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-button {
+    display: inline-block;
+    background: #ff7f50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.info-button:hover {
+    background: #ff5722;
+}
