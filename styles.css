@@ -1,135 +1,69 @@
-/* Reset y configuración global */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
     background-color: #f4f4f4;
     color: #333;
-    text-align: center;
 }
 
 /* Hero Section */
 .hero {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
     text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    background: #ff9800;
     color: white;
-}
-
-.hero-content {
-    max-width: 700px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #ff7f50;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-size: 1.2rem;
+    padding: 10px 20px;
     text-decoration: none;
-    transition: 0.3s;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-.cta-button:hover {
-    background: #ff5722;
-}
-
-/* Secciones a pantalla completa */
-section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Proyectos */
+.proyectos, .contacto {
+    padding: 50px 20px;
     text-align: center;
-    padding: 50px;
 }
 
-/* Modelos de IA */
-.models {
-    background: #f4f4f4;
-}
-
-.model-grid {
+.proyectos-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
-.model-card {
+.proyecto {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 280px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.model-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Contacto */
-.contact {
-    background: #222;
-    color: white;
-}
-
-.contact form {
+/* Formulario de Contacto */
+.contacto form {
+    max-width: 400px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
 }
 
-input, textarea {
-    width: 50%;
-    padding: 12px;
-    margin: 10px 0;
+.contacto form input, .contacto form textarea {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button {
-    padding: 12px 25px;
-    background: #ff7f50;
+.contacto form button {
+    background: #ff9800;
     color: white;
+    padding: 10px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #ff5722;
-}
-
-/* Footer */
-footer {
-    background: #111;
-    color: white;
-    padding: 20px;
-    text-align: center;
 }

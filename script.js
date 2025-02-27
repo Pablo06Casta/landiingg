@@ -1,22 +1,17 @@
-document.getElementById("contact-form").addEventListener("submit", async function(event) {
+document.getElementById('contactForm').addEventListener('submit', async function(event) {
     event.preventDefault();
+    
+    const formData = new FormData(this);
 
-    const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
+    try {
+        const response = await fetch('https://tu-endpoint.com/contact', {
+            method: 'POST',
+            body: formData
+        });
 
-    const response = await fetch("https://getform.io/f/anlqxnpa", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-    });
-
-    if (response.ok) {
-        document.getElementById("contact-form").reset();
-        document.getElementById("success-message").style.display = "block";
-    } else {
-        alert("Hubo un error al enviar el formulario.");
+        const result = await response.json();
+        document.getElementById('responseMessage').innerText = result.message;
+    } catch (error) {
+        document.getElementById('responseMessage').innerText = 'Error al enviar el mensaje';
     }
 });
