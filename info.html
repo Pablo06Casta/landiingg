@@ -139,6 +139,54 @@
             padding: 20px;
             margin-top: 50px;
         }
+        .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+/* Estilo del botón original */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(42, 82, 152, 0.3);
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #1e3c72, #16365c);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(42, 82, 152, 0.5);
+}
+
+/* Estilo para el botón "Interesante" */
+.cta-button.secondary {
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    border: 2px solid #ff5722;
+}
+
+.cta-button.secondary:hover {
+    background: linear-gradient(90deg, #e65100, #bf360c);
+    box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.5);
+}
+
+/* Estilo para el botón "Conóceme" */
+.cta-button.conoceme {
+    background: linear-gradient(90deg, #28a745, #218838);
+    border: 2px solid #218838;
+}
+
+.cta-button.conoceme:hover {
+    background: linear-gradient(90deg, #1e7e34, #155724);
+    box-shadow: 0px 6px 15px rgba(40, 167, 69, 0.5);
+}
     </style>
 </head>
 <body>
@@ -159,7 +207,7 @@
 
             <div class="highlight">
                 <img src="Leonardo_Phoenix_10_Design_a_prominent_logo_placed_centrally_o_0.jpg" alt="Finanzas IA">
-                <p><strong>Finanzas:</strong> Una entidad bancaria redujo en un 40% los fraudes financieros mediante modelos de detección de anomalías.</p>
+                <p><strong>Contabilidad</strong> Herramienta de IA que ayuda a las empresas con la contabilidad, hace asientos contables, crea informes, da sugerencias, se adapta a la empresa en concreto, hace balances, consigue hacer todo el ciclo contable. </p>
             </div>
         </div>
     </div>
@@ -170,6 +218,7 @@
         <div class="cta-buttons">
             <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__UkCgLRUMlA3UEtINlg0OFJDQVZWSko0OU1HNUZMTC4u" class="cta-button">Contacta con nosotros</a>
             <a href="#" class="cta-button secondary">Interésate</a>
+            <a href="#" class="cta-button conoceme">Conóceme</a>
         </div>
     </div>
     
