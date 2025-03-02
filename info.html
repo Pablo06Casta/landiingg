@@ -89,30 +89,47 @@
             border-radius: 8px;
         }
 
-        /* CTA */
+        /* CTA (Sección de botones) */
         .cta {
-    text-align: center;
-    margin-top: 60px; /* Aumenta el espacio general arriba de la sección */
-}
+            text-align: center;
+            margin-top: 40px;
+        }
 
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(90deg, #2a5298, #1e3c72);
-    color: white;
-    padding: 15px 40px;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(42, 82, 152, 0.3);
-    margin-top: 20px; /* Agrega espacio solo sobre el botón */
-}
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre los botones */
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #2a5298, #1e3c72);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(42, 82, 152, 0.3);
+        }
 
         .cta-button:hover {
             background: linear-gradient(90deg, #1e3c72, #16365c);
             transform: scale(1.05);
             box-shadow: 0px 6px 15px rgba(42, 82, 152, 0.5);
+        }
+
+        /* Estilo para el botón "Interesante" */
+        .cta-button.secondary {
+            background: linear-gradient(90deg, #ff9800, #ff5722);
+            border: 2px solid #ff5722;
+        }
+
+        .cta-button.secondary:hover {
+            background: linear-gradient(90deg, #e65100, #bf360c);
+            box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.5);
         }
 
         /* Footer */
@@ -142,17 +159,18 @@
 
             <div class="highlight">
                 <img src="Leonardo_Phoenix_10_Design_a_prominent_logo_placed_centrally_o_0.jpg" alt="Finanzas IA">
-                <p><strong>Finanzas:</strong> Herramienta de inteligencia artificial que te ayuda con la contabilidad de la empresa generando informes, exportaciones con excel, bases de datos.</p>
+                <p><strong>Finanzas:</strong> Una entidad bancaria redujo en un 40% los fraudes financieros mediante modelos de detección de anomalías.</p>
             </div>
-
-        
         </div>
     </div>
     
     <div class="cta">
         <h2>¿Listo para Transformar tu Empresa?</h2>
         <p>Solicita una demostración de InsightX y descubre cómo la IA puede impulsar tu negocio.</p>
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__UkCgLRUMlA3UEtINlg0OFJDQVZWSko0OU1HNUZMTC4u" class="cta-button" target="_blank">Contacta con nosotros</a>
+        <div class="cta-buttons">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__UkCgLRUMlA3UEtINlg0OFJDQVZWSko0OU1HNUZMTC4u" class="cta-button">Contacta con nosotros</a>
+            <a href="#" class="cta-button secondary">Interésate</a>
+        </div>
     </div>
     
     <div class="footer">
