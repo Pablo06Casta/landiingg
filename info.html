@@ -8,7 +8,6 @@
     <!-- Estilos y Fuentes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 
     <style>
         /* Reset global */
@@ -48,7 +47,7 @@
             max-width: 1200px;
             margin: auto;
             padding: 60px 20px;
-            text-align: left;
+            text-align: center;
         }
 
         .section h2 {
@@ -61,6 +60,19 @@
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Modelos IA */
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            justify-content: center;
         }
 
         .highlight {
@@ -68,26 +80,34 @@
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .highlight img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
         /* CTA */
         .cta {
-            text-align: center;
-            margin-top: 40px;
-        }
+    text-align: center;
+    margin-top: 60px; /* Aumenta el espacio general arriba de la sección */
+}
 
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(90deg, #2a5298, #1e3c72);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0px 4px 10px rgba(42, 82, 152, 0.3);
-        }
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(42, 82, 152, 0.3);
+    margin-top: 20px; /* Agrega espacio solo sobre el botón */
+}
 
         .cta-button:hover {
             background: linear-gradient(90deg, #1e3c72, #16365c);
@@ -102,77 +122,41 @@
             padding: 20px;
             margin-top: 50px;
         }
-
     </style>
 </head>
 <body>
-
-    <!-- Hero Section -->
     <div class="hero">
         <h1>¿Cómo InsightX Puede Transformar tu Empresa?</h1>
         <p>Descubre cómo nuestros modelos de inteligencia artificial pueden potenciar el crecimiento y la eficiencia de tu negocio.</p>
     </div>
     
-    <!-- Sección: Introducción a la IA -->
     <div class="section">
-        <h2>El Poder de la Inteligencia Artificial en los Negocios</h2>
-        <p>La inteligencia artificial (IA) ha revolucionado la forma en que las empresas analizan datos, toman decisiones y optimizan procesos. InsightX permite que cualquier empresa, independientemente de su tamaño, aproveche el poder de la IA para obtener una ventaja competitiva.</p>
-        <div class="highlight">
-            <p><strong>¿Sabías que?</strong> Las empresas que utilizan IA para el análisis predictivo pueden aumentar sus ingresos en más de un 30% en comparación con aquellas que no lo hacen.</p>
+        <h2>Modelos de Inteligencia Artificial</h2>
+        <p>Contáctanos para conseguir más información sobre los modelos de inteligencia artificial:</p>
+
+        <div class="models-grid">
+            <div class="highlight">
+                <img src="Leonardo_Phoenix_10_Design_a_modern_sleek_logo_that_prominentl_3.jpg" alt="InsightX IA">
+                <p><strong>InsightX:</strong> Herramienta de IA especializada en analizar mercados, crear planes y guiar en decisiones estratégicas de forma clara y fiable.</p>
+            </div>
+
+            <div class="highlight">
+                <img src="Leonardo_Phoenix_10_Design_a_prominent_logo_placed_centrally_o_0.jpg" alt="Finanzas IA">
+                <p><strong>Finanzas:</strong> Herramienta de inteligencia artificial que te ayuda con la contabilidad de la empresa generando informes, exportaciones con excel, bases de datos.</p>
+            </div>
+
+        
         </div>
     </div>
-
-    <!-- Sección: Beneficios de InsightX -->
-    <div class="section">
-        <h2>¿Qué Beneficios Puede Traer a tu Empresa?</h2>
-        <p>InsightX te ayuda a:</p>
-        <ul>
-            <li> <strong>Optimizar estrategias comerciales:</strong> Predice tendencias de mercado y ajusta tu modelo de negocio en consecuencia.</li>
-            <li> <strong>Automatizar procesos:</strong> Reduce costos operativos y mejora la eficiencia con modelos inteligentes.</li>
-            <li> <strong>Tomar decisiones basadas en datos:</strong> Accede a análisis en tiempo real que mejoran la toma de decisiones.</li>
-            <li> <strong>Personalizar la experiencia del cliente:</strong> Mejora la fidelización con IA que comprende el comportamiento de los consumidores.</li>
-            <li> <strong>Proteger datos y cumplir normativas:</strong> InsightX cumple con RGPD e ISO 27001 para garantizar la seguridad de la información.</li>
-        </ul>
-    </div>
-
-<!-- Sección: Casos de Uso -->
-<div class="section">
-    <h2>Modelos de inteligencia artificial</h2>
-    <p>Contáctanos para conseguir más información sobre los modelos de inteligencia artificial:</p>
-
-    <div class="highlight">
-        <div class="highlight-content">
-            <img src="Leonardo_Phoenix_10_Design_a_modern_sleek_logo_that_prominentl_3.jpg" alt="InsightX IA" class="highlight-image">
-            <p><strong>InsightX:</strong> Herramienta de IA especializada en analizar mercados, crear planes y guiar en decisiones estratégicas de forma clara y fiable.</p>
-        </div>
-    </div>
-
-    <div class="highlight">
-        <div class="highlight-content">
-            <img src="img/finanzas-ai.jpg" alt="Finanzas IA" class="highlight-image">
-            <p><strong>Finanzas:</strong> Una entidad bancaria redujo en un 40% los fraudes financieros mediante modelos de detección de anomalías.</p>
-        </div>
-    </div>
-
-    <div class="highlight">
-        <div class="highlight-content">
-            <img src="img/salud-ai.jpg" alt="Salud IA" class="highlight-image">
-            <p><strong>Salud:</strong> Un hospital mejoró la eficiencia en la atención médica al utilizar IA para optimizar la gestión de citas.</p>
-        </div>
-    </div>
-</div>
     
-
-    <!-- CTA -->
     <div class="cta">
         <h2>¿Listo para Transformar tu Empresa?</h2>
         <p>Solicita una demostración de InsightX y descubre cómo la IA puede impulsar tu negocio.</p>
         <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__UkCgLRUMlA3UEtINlg0OFJDQVZWSko0OU1HNUZMTC4u" class="cta-button" target="_blank">Contacta con nosotros</a>
     </div>
-    <!-- Footer -->
+    
     <div class="footer">
         <p>&copy; 2025 InsightX - IA para Empresas | Todos los derechos reservados</p>
     </div>
-
 </body>
 </html>
