@@ -100,3 +100,42 @@ body {
     transform: scale(0.98);
     box-shadow: 0px 2px 8px rgba(0, 123, 255, 0.2);
 }
+/* Estilo del recuadro */
+.highlight {
+    background: #e3e7ed;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Que ocupe todo el ancho disponible */
+}
+
+/* Contenedor de la imagen y el texto */
+.highlight-content {
+    display: flex;
+    flex-direction: column; /* Asegura que la imagen esté arriba y el texto abajo */
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    width: 100%; /* Que ocupe todo el recuadro */
+}
+
+/* Imagen dentro del recuadro */
+.highlight-image {
+    width: 50%; /* Ajuste del tamaño de la imagen */
+    max-width: 50px; /* La imagen no será más grande que 150px */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+/* Ajuste de texto dentro del recuadro */
+.highlight-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    width: 90%;
+}
